@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodak Stream</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyB6WsJgmolCH3J7NnaFj1-jhRqdZvdRZO0",
+    authDomain: "zodak-stream.firebaseapp.com",
+    databaseURL: "https://zodak-stream-default-rtdb.firebaseio.com",
+    projectId: "zodak-stream",
+    storageBucket: "zodak-stream.firebasestorage.app",
+    messagingSenderId: "553863110606",
+    appId: "1:553863110606:web:374e260904a22f47a4d59f",
+    measurementId: "G-5N1ZLRFNG7"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="logo.png" alt="Zodak Stream Logo" class="logo">
+        </div>
+        <h1>Welcome to Zodak Stream</h1>
+        <p>The Future of Video Streaming</p>
+    </header>
+
+    <main>
+        <div class="interactive-features">
+            <div class="feature" onclick="openMorphingTool()">
+                <img src="morphing-icon.png" alt="Morphing Tool">
+                <p>Morph Video/Image</p>
+            </div>
+            <div class="feature" onclick="showSubtitleTool()">
+                <img src="subtitle-icon.png" alt="Subtitle Generator">
+                <p>AI Subtitle Generator</p>
+            </div>
+        </div>
+
+        <section class="videos-feed">
+            <h2>Latest Videos</h2>
+            <!-- Dynamically loaded videos -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Zodak Stream. Created by Zakee Mohammed.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
